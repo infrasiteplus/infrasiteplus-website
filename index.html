@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>infraSitePlus - Monitor. Manage. Maintain.</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Lexend:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0056b3",
+                        navy: {
+                            800: "#12264a",
+                            900: "#0a1a35",
+                        },
+                        "background-light": "#f8fafc",
+                        "background-dark": "#020617",
+                    },
+                    fontFamily: {
+                        display: ["Lexend", "sans-serif"],
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #12264a 0%, #0056b3 100%);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-slate-900 bg-background-light dark:bg-background-dark dark:text-slate-100">
+<header class="fixed top-0 z-50 w-full border-b border-slate-200/80 bg-white/80 backdrop-blur-md dark:border-slate-800/80 dark:bg-slate-950/80">
+<div class="container mx-auto flex h-20 items-center justify-between px-6">
+<div class="flex items-center gap-2">
+<img alt="infraSitePlus Logo" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0ooBQGCbc4lh8N2HvX7fTGCuxvE9gAPP8-1P3QZyS1eqQsUPGjRC-QtCRa95Xyg5XWjGRrZ0YQZPeJ0rZHql1WRkZRamfchcSFVo4grqTewh8vVjN3NA6E4KwzgNfBgWLEIuVns65Q9UmnnLyU4PRykP3ApzfkCsSpWS-biL7HNKW7oDLjNzbbpuj-iiFGsjkYpbr36xjY-nJVzV1llS-qeL0i_kJeNo_T3OS4Fo-9HS8V7VxM-rCKZxGJrfOZLkA_a99T-s491I"/>
+<div class="hidden md:block">
+<span class="text-xl font-display font-bold text-navy-800 dark:text-white">infraSitePlus</span>
+</div>
+</div>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#features">Features</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Solutions</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Case Studies</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Company</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 text-slate-500 hover:text-primary dark:text-slate-400" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-symbols-outlined">dark_mode</span>
+</button>
+<a class="hidden sm:inline-flex items-center text-sm font-semibold text-slate-700 hover:text-primary dark:text-slate-300" href="#">Login</a>
+<a class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-primary hover:bg-blue-700 rounded-full transition-all shadow-lg shadow-blue-500/20" href="#">
+                    Get Started
+                </a>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<section class="relative overflow-hidden py-24 lg:py-32">
+<div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.blue.100),transparent)] dark:bg-[radial-gradient(45rem_50rem_at_top,theme(colors.blue.900/0.1),transparent)]"></div>
+<div class="container mx-auto px-6">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8 text-center lg:text-left">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 text-xs font-bold uppercase tracking-wider">
+<span class="flex h-2 w-2 rounded-full bg-blue-600 animate-pulse"></span>
+                            Smart Infrastructure Management
+                        </div>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight tracking-tight text-navy-800 dark:text-white">
+                            Monitor, Manage, Maintain <br/>
+<span class="text-primary">Projects in Real-Time</span>
+</h1>
+<p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto lg:mx-0">
+                            The all-in-one digital command center for large-scale infrastructure projects. Streamline operations, ensure compliance, and maximize efficiency from groundbreak to completion.
+                        </p>
+<div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+<a class="w-full sm:w-auto px-8 py-4 bg-primary text-white font-bold rounded-lg shadow-xl shadow-blue-500/30 hover:scale-105 transition-transform text-center" href="#">
+                                Request a Demo
+                            </a>
+<a class="w-full sm:w-auto px-8 py-4 bg-white dark:bg-slate-800 text-slate-900 dark:text-white font-bold rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors text-center" href="#">
+                                Watch Overview
+                            </a>
+</div>
+<div class="flex items-center justify-center lg:justify-start gap-6 text-sm text-slate-500 font-medium">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-green-500 text-lg">check_circle</span> ISO Certified
+                            </div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-green-500 text-lg">check_circle</span> 256-bit Encryption
+                            </div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-green-500 text-lg">check_circle</span> 24/7 Support
+                            </div>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-primary to-blue-400 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+<div class="relative bg-white dark:bg-slate-900 rounded-2xl shadow-2xl overflow-hidden border border-slate-200 dark:border-slate-800">
+<img alt="Infrastructure Construction Site Dashboard Mockup" class="w-full h-auto opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8jCBsq_SL_CKblLThOz6qx0sXiRKtC5RuTiDj1cNcpNgtqS1UbHDVzXL4yVLg2y2uIXOsBAeUOFVUo7nClV8Jnm9HulUjiztQuayobcW8aYd1Ewkizm3gvARvUhlkvXAFm344mgFit7Vkz6tQd43C0jwGbmeNVobhCEGVx3W_KK0CWLQ-HYquoC1OSO849I7hfq-xTqmAirJzplquJz0pQHLKerShZzD5D2QVMFZdRjqQaoopxuGNRTp8cVVBmkIWWQ7X4ikD7yk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-navy-900/80 via-transparent to-transparent flex items-end p-8">
+<div class="text-white">
+<p class="text-sm font-medium opacity-80 uppercase tracking-widest">Active Site: North Bridge Expansion</p>
+<p class="text-2xl font-bold">Real-time Telemetry Active</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-12 bg-white dark:bg-slate-950 border-y border-slate-200 dark:border-slate-800">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="text-center">
+<div class="text-3xl font-bold text-primary">500+</div>
+<div class="text-sm text-slate-500 uppercase tracking-widest mt-1">Projects Monitored</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-bold text-primary">99.9%</div>
+<div class="text-sm text-slate-500 uppercase tracking-widest mt-1">Uptime Guarantee</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-bold text-primary">15k+</div>
+<div class="text-sm text-slate-500 uppercase tracking-widest mt-1">Active Users</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-bold text-primary">$2.4B</div>
+<div class="text-sm text-slate-500 uppercase tracking-widest mt-1">Asset Value Managed</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-slate-50 dark:bg-slate-900/30" id="features">
+<div class="container mx-auto px-6">
+<div class="max-w-3xl mx-auto text-center mb-16 space-y-4">
+<h2 class="text-3xl md:text-4xl font-display font-bold text-navy-800 dark:text-white">Comprehensive Module Suite</h2>
+<p class="text-slate-600 dark:text-slate-400">Everything you need to maintain control over complex infrastructure lifecycles, from initial site survey to final delivery.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<div class="p-8 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
+<div class="w-12 h-12 flex items-center justify-center rounded-xl bg-blue-50 dark:bg-blue-900/20 text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">report_problem</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-navy-800 dark:text-white">Defects Management</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Log, track, and resolve site defects with geo-tagged photos and automated contractor notifications.</p>
+</div>
+<div class="p-8 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
+<div class="w-12 h-12 flex items-center justify-center rounded-xl bg-blue-50 dark:bg-blue-900/20 text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">badge</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-navy-800 dark:text-white">Attendance Management</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Real-time labor tracking with facial recognition and geo-fencing to ensure site safety and payroll accuracy.</p>
+</div>
+<div class="p-8 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
+<div class="w-12 h-12 flex items-center justify-center rounded-xl bg-blue-50 dark:bg-blue-900/20 text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">description</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-navy-800 dark:text-white">Document Management</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Centralized repository for blueprints, permits, and specifications with full version control.</p>
+</div>
+<div class="p-8 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
+<div class="w-12 h-12 flex items-center justify-center rounded-xl bg-blue-50 dark:bg-blue-900/20 text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">gavel</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-navy-800 dark:text-white">Dispute Management</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Structured workflow to handle and resolve contractual disagreements with evidentiary tracking.</p>
+</div>
+<div class="p-8 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
+<div class="w-12 h-12 flex items-center justify-center rounded-xl bg-blue-50 dark:bg-blue-900/20 text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">request_quote</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-navy-800 dark:text-white">Claim Management</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Streamline insurance and contractual claims with automated validation and status reporting.</p>
+</div>
+<div class="p-8 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
+<div class="w-12 h-12 flex items-center justify-center rounded-xl bg-blue-50 dark:bg-blue-900/20 text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">calendar_today</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-navy-800 dark:text-white">EoT Management</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Manage Extension of Time requests with impact analysis on project milestones and critical paths.</p>
+</div>
+<div class="p-8 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
+<div class="w-12 h-12 flex items-center justify-center rounded-xl bg-blue-50 dark:bg-blue-900/20 text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">contract</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-navy-800 dark:text-white">COS Management</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Monitor Change of Scope requests with detailed budget impact and approval chain workflows.</p>
+</div>
+<div class="p-8 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
+<div class="w-12 h-12 flex items-center justify-center rounded-xl bg-blue-50 dark:bg-blue-900/20 text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">receipt_long</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-navy-800 dark:text-white">Bill Management</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Automate invoicing and vendor payments based on verified project milestones and progress reports.</p>
+</div>
+<div class="p-8 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
+<div class="w-12 h-12 flex items-center justify-center rounded-xl bg-blue-50 dark:bg-blue-900/20 text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">warning</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-navy-800 dark:text-white">Penalty Management</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Enforce contractual obligations with automatic penalty calculations for delays or safety breaches.</p>
+</div>
+<div class="p-8 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
+<div class="w-12 h-12 flex items-center justify-center rounded-xl bg-blue-50 dark:bg-blue-900/20 text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">cloud_sync</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-navy-800 dark:text-white">Drive Storage</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Secure, high-speed cloud storage for terabytes of project data, drawings, and 3D models.</p>
+</div>
+<div class="p-8 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
+<div class="w-12 h-12 flex items-center justify-center rounded-xl bg-blue-50 dark:bg-blue-900/20 text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">videocam</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-navy-800 dark:text-white">CCTV Monitoring</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Live streaming and AI-powered activity detection integrated directly into your dashboard.</p>
+</div>
+<div class="p-8 hero-gradient rounded-2xl shadow-xl flex flex-col justify-center items-center text-center text-white">
+<h3 class="text-xl font-bold mb-3">Need Custom Solutions?</h3>
+<p class="text-sm text-blue-100 mb-6">Our engineering team can build bespoke modules for your specific project needs.</p>
+<a class="px-6 py-2 bg-white text-primary font-bold rounded-lg hover:bg-blue-50 transition-colors" href="#">
+                            Contact Sales
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24">
+<div class="container mx-auto px-6">
+<div class="relative bg-navy-900 dark:bg-slate-950 rounded-3xl overflow-hidden p-8 md:p-16 text-center">
+<div class="absolute top-0 left-0 w-full h-full opacity-10">
+<svg class="w-full h-full" preserveAspectRatio="none" viewBox="0 0 100 100">
+<path d="M0 0 L100 0 L100 100 L0 100 Z" fill="none" stroke="white" stroke-dasharray="1 2" stroke-width="0.1"></path>
+</svg>
+</div>
+<div class="relative z-10 max-w-2xl mx-auto space-y-8">
+<h2 class="text-3xl md:text-4xl font-display font-bold text-white">Ready to modernize your infrastructure management?</h2>
+<p class="text-blue-100 text-lg">Join hundreds of project managers who have improved efficiency by 35% using our platform.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="px-8 py-4 bg-primary text-white font-bold rounded-lg hover:bg-blue-600 transition-colors shadow-lg shadow-blue-500/20">Get Started Now</button>
+<button class="px-8 py-4 bg-transparent text-white font-bold rounded-lg border border-white/20 hover:bg-white/10 transition-colors">Schedule Training</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 pt-20 pb-10">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<div class="space-y-6">
+<div class="flex items-center gap-2">
+<img alt="infraSitePlus Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI5fGi-9vUQCms-wfzORsmESiMlqIh956aaPHsPtXcOqVEqv52WlqBZ_-4LhC5IUFFTGAq6oc1xUXKy3TVcPYFgzFm6OhFGuD16QqbD_QkWAtXRRZzIFHYgS1EHLALEhEf_m_dY8C95FQYi9hp5_u7kWjZf_A-4GXmduAYx6hHnCT_ScoWggNE_csRnB-5oG_7wLXa3inL4i4pN-jpvUZv-xjMa_SmgM-CHAOHYy5lQ4asJJ6Tqn3BSzFjiGmswQgXw2w-StqBrII"/>
+<span class="text-lg font-display font-bold text-navy-800 dark:text-white">infraSitePlus</span>
+</div>
+<p class="text-sm text-slate-500 dark:text-slate-400">Leading the digital transformation of global infrastructure projects with intelligent monitoring and management solutions.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-white transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-white transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M22.23 0H1.77C.8 0 0 .8 0 1.77v20.46C0 23.2.8 24 1.77 24h20.46c.98 0 1.77-.8 1.77-1.77V1.77C24 .8 23.2 0 22.23 0zM7.12 20.45H3.56V9h3.56v11.45zM5.34 7.58c-1.14 0-2.06-.93-2.06-2.06 0-1.14.92-2.06 2.06-2.06s2.06.92 2.06 2.06c0 1.13-.92 2.06-2.06 2.06zM20.45 20.45h-3.56v-5.6c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.15 1.46-2.15 2.96v5.7h-3.56V9h3.42v1.56h.05c.48-.9 1.63-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29z"></path></svg>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-navy-800 dark:text-white mb-6">Product</h4>
+<ul class="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Features Overview</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Integrations</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Pricing Plans</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Security &amp; Privacy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-navy-800 dark:text-white mb-6">Resources</h4>
+<ul class="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Documentation</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">API Reference</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Industry Reports</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Community Forum</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-navy-800 dark:text-white mb-6">Support</h4>
+<ul class="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Help Center</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Service Status</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Training Portal</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs text-slate-500 dark:text-slate-500">© 2024 infraSitePlus. All rights reserved.</p>
+<div class="flex gap-6 text-xs text-slate-500 dark:text-slate-500">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Terms of Service</a>
+<a class="hover:text-primary" href="#">Cookie Settings</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>
