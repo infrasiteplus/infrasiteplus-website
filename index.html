@@ -54,31 +54,56 @@
     <header
         class="fixed top-0 z-50 w-full border-b border-slate-200/80 bg-white/80 backdrop-blur-md dark:border-slate-800/80 dark:bg-slate-950/80">
         <div class="container mx-auto flex h-20 items-center justify-between px-6">
-            <div class="flex items-center gap-2">
+            <a class="flex items-center gap-2 cursor-pointer shrink-0" data-scroll-top href="#">
                 <img alt="infraSitePlus Logo" class="h-10 w-auto" src="./assets/logo.png" />
-                <div class="hidden md:block">
+                <div class="hidden sm:block">
                     <span class="text-xl font-display font-bold text-navy-800 dark:text-white">Infra SitePlus</span>
                 </div>
-            </div>
+            </a>
             <nav class="hidden lg:flex items-center gap-8">
-                <a class="text-sm font-medium hover:text-primary transition-colors" href="#features">Features</a>
-                <a class="text-sm font-medium hover:text-primary transition-colors" href="#solutions">Solutions</a>
-                <a class="text-sm font-medium hover:text-primary transition-colors" href="#about">About</a>
-                <a class="text-sm font-medium hover:text-primary transition-colors" href="#team">Our Team</a>
-                <a class="text-sm font-medium hover:text-primary transition-colors" href="#contact">Contact Us</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" data-scroll-target="features" href="#">Features</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" data-scroll-target="solutions" href="#">Solutions</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" data-scroll-target="about" href="#">About</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" data-scroll-target="team" href="#">Our Team</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" data-scroll-target="contact" href="#">Contact Us</a>
             </nav>
-            <div class="flex items-center gap-4">
-                <button class="p-2 text-slate-500 hover:text-primary dark:text-slate-400"
+            <div class="flex items-center gap-2 sm:gap-4">
+                <button aria-label="Toggle dark mode" class="p-2 text-slate-500 hover:text-primary dark:text-slate-400"
                     onclick="document.documentElement.classList.toggle('dark')">
                     <span class="material-symbols-outlined">dark_mode</span>
                 </button>
-                <!-- <a class="hidden sm:inline-flex items-center text-sm font-semibold text-slate-700 hover:text-primary dark:text-slate-300" href="#">Login</a> -->
-                <a class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-primary hover:bg-blue-700 rounded-full transition-all shadow-lg shadow-blue-500/20"
+                <a class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-primary hover:bg-blue-700 rounded-full transition-all shadow-lg shadow-blue-500/20"
+                    href="https://siteplus.projectapp.in/auth/login">
+                    Login
+                </a>
+                <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation menu"
+                    class="lg:hidden p-2 text-slate-600 hover:text-primary dark:text-slate-300"
+                    id="mobile-menu-toggle" type="button">
+                    <span class="material-symbols-outlined mobile-menu-icon-open">menu</span>
+                    <span class="material-symbols-outlined mobile-menu-icon-close hidden">close</span>
+                </button>
+            </div>
+        </div>
+        <nav aria-label="Mobile navigation"
+            class="lg:hidden hidden absolute top-full left-0 w-full border-b border-slate-200/80 bg-white/95 backdrop-blur-md dark:border-slate-800/80 dark:bg-slate-950/95 shadow-lg"
+            id="mobile-menu">
+            <div class="container mx-auto px-6 py-4 flex flex-col gap-1">
+                <a class="px-3 py-3 text-sm font-medium rounded-lg hover:bg-slate-100 hover:text-primary dark:hover:bg-slate-800 transition-colors"
+                    data-scroll-target="features" href="#">Features</a>
+                <a class="px-3 py-3 text-sm font-medium rounded-lg hover:bg-slate-100 hover:text-primary dark:hover:bg-slate-800 transition-colors"
+                    data-scroll-target="solutions" href="#">Solutions</a>
+                <a class="px-3 py-3 text-sm font-medium rounded-lg hover:bg-slate-100 hover:text-primary dark:hover:bg-slate-800 transition-colors"
+                    data-scroll-target="about" href="#">About</a>
+                <a class="px-3 py-3 text-sm font-medium rounded-lg hover:bg-slate-100 hover:text-primary dark:hover:bg-slate-800 transition-colors"
+                    data-scroll-target="team" href="#">Our Team</a>
+                <a class="px-3 py-3 text-sm font-medium rounded-lg hover:bg-slate-100 hover:text-primary dark:hover:bg-slate-800 transition-colors"
+                    data-scroll-target="contact" href="#">Contact Us</a>
+                <a class="sm:hidden mt-2 inline-flex items-center justify-center px-5 py-3 text-sm font-semibold text-white bg-primary hover:bg-blue-700 rounded-lg transition-colors"
                     href="https://siteplus.projectapp.in/auth/login">
                     Login
                 </a>
             </div>
-        </div>
+        </nav>
     </header>
     <main class="pt-20">
         <section class="relative overflow-hidden py-16 lg:py-20">
@@ -298,7 +323,7 @@
                     <!-- <div class="p-8 hero-gradient rounded-2xl shadow-xl flex flex-col justify-center items-center text-center text-white">
 <h3 class="text-xl font-bold mb-3">Need Custom Solutions?</h3>
 <p class="text-sm text-blue-100 mb-6">Our engineering team can build bespoke modules for your specific project needs.</p>
-<a class="px-6 py-2 bg-white text-primary font-bold rounded-lg hover:bg-blue-50 transition-colors" href="#contact">
+<a class="px-6 py-2 bg-white text-primary font-bold rounded-lg hover:bg-blue-50 transition-colors" data-scroll-target="contact" href="#">
                             Contact Sales
                         </a>
 </div> -->
@@ -690,10 +715,10 @@
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <div class="space-y-6">
-                    <div class="flex items-center gap-2">
+                    <a class="flex items-center gap-2 cursor-pointer" data-scroll-top href="#">
                         <img alt="infraSitePlus Logo" class="h-8 w-auto" src="./assets/logo.png" />
                         <span class="text-lg font-display font-bold text-navy-800 dark:text-white">Infra SitePlus</span>
-                    </div>
+                    </a>
                     <p class="text-sm text-slate-500 dark:text-slate-400">Leading the digital transformation of global
                         infrastructure projects with intelligent monitoring and management solutions.</p>
                     <!-- <div class="flex gap-4">
@@ -737,7 +762,7 @@
                     <h4 class="font-bold text-navy-800 dark:text-white mb-6">Support</h4>
                     <ul class="space-y-4 text-sm text-slate-500 dark:text-slate-400">
                         <li><a class="hover:text-primary transition-colors" href="#">Help Center</a></li>
-                        <li><a class="hover:text-primary transition-colors" href="#contact">Contact Us</a></li>
+                        <li><a class="hover:text-primary transition-colors" data-scroll-target="contact" href="#">Contact Us</a></li>
                         <li><a class="hover:text-primary transition-colors" href="#">Service Status</a></li>
                         <li><a class="hover:text-primary transition-colors" href="#">Training Portal</a></li>
                     </ul>
@@ -754,6 +779,96 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        (function () {
+            var headerOffset = 80;
+
+            function cleanUrl() {
+                var clean = window.location.pathname + window.location.search;
+                if (window.location.hash) {
+                    history.replaceState(null, '', clean);
+                }
+            }
+
+            function scrollToTarget(targetId) {
+                if (!targetId) {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else {
+                    var el = document.getElementById(targetId);
+                    if (el) {
+                        var top = el.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+                        window.scrollTo({ top: top, behavior: 'smooth' });
+                    }
+                }
+                cleanUrl();
+                closeMobileMenu();
+            }
+
+            var mobileMenu = document.getElementById('mobile-menu');
+            var mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            var mobileMenuIconOpen = document.querySelector('.mobile-menu-icon-open');
+            var mobileMenuIconClose = document.querySelector('.mobile-menu-icon-close');
+
+            function closeMobileMenu() {
+                if (!mobileMenu || !mobileMenuToggle) return;
+                mobileMenu.classList.add('hidden');
+                mobileMenuToggle.setAttribute('aria-expanded', 'false');
+                if (mobileMenuIconOpen) mobileMenuIconOpen.classList.remove('hidden');
+                if (mobileMenuIconClose) mobileMenuIconClose.classList.add('hidden');
+            }
+
+            function openMobileMenu() {
+                if (!mobileMenu || !mobileMenuToggle) return;
+                mobileMenu.classList.remove('hidden');
+                mobileMenuToggle.setAttribute('aria-expanded', 'true');
+                if (mobileMenuIconOpen) mobileMenuIconOpen.classList.add('hidden');
+                if (mobileMenuIconClose) mobileMenuIconClose.classList.remove('hidden');
+            }
+
+            if (mobileMenuToggle) {
+                mobileMenuToggle.addEventListener('click', function () {
+                    if (mobileMenu.classList.contains('hidden')) {
+                        openMobileMenu();
+                    } else {
+                        closeMobileMenu();
+                    }
+                });
+            }
+
+            window.addEventListener('resize', function () {
+                if (window.innerWidth >= 1024) {
+                    closeMobileMenu();
+                }
+            });
+
+            document.querySelectorAll('[data-scroll-top]').forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    scrollToTarget(null);
+                });
+            });
+
+            document.querySelectorAll('[data-scroll-target]').forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    scrollToTarget(link.getAttribute('data-scroll-target'));
+                });
+            });
+
+            if (window.location.hash) {
+                var id = window.location.hash.slice(1);
+                var section = document.getElementById(id);
+                if (section) {
+                    requestAnimationFrame(function () {
+                        var top = section.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+                        window.scrollTo({ top: top, behavior: 'smooth' });
+                    });
+                }
+                cleanUrl();
+            }
+        })();
+    </script>
 
 </body>
 
